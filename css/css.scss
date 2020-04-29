@@ -1,0 +1,304 @@
+/* ---------------------------------------*/
+@import "_variables.scss";
+/* ---------------------------------------*/
+
+body {
+  background: $black;
+  padding: 0px;
+  margin: 0px;
+  color: $white;
+  font-family: Gotham SSm A, Gotham SSm B, Century Gothic, Futura, Arial,
+    "Montserrat", sans-serif;
+}
+
+.logo {
+  text-align: left;
+  img {
+    width: 75px;
+    height: 45px;
+    border-radius: 4px;
+  }
+}
+#notice {
+  font-size: 11px;
+  color: #8e0000;
+}
+.row {
+  width: auto;
+}
+
+.grid_col {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas: "left_col right_col";
+  grid-template-columns: 1fr 1fr;
+
+  .right_col {
+    grid-area: right_col;
+    background: url($bgImg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    min-height: 100vh;
+    margin: 0px;
+  }
+
+  .left_col {
+    grid-area: left_col;
+    background: $black;
+    min-height: 90vh;
+    padding: 25px;
+  }
+
+  .flex-container {
+    height: 80vh;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+.web_form {
+  width: 80%;
+  max-width: 500px;
+  div {
+    margin-bottom: 15px;
+    padding: 5px;
+    margin: 0 10px;
+    label {
+      font-size: 12px;
+      line-height: 35px;
+      color: $white;
+      font-weight: 300;
+      box-sizing: border-box;
+    }
+    input[type="email"],
+    input[type="text"] {
+      width: 100%;
+      line-height: 3rem;
+      height: 3rem;
+      display: inline-block;
+      border: 0.2px solid $white;
+      border-radius: 0;
+      background-color: $white;
+      color: $black;
+      padding: $inputPadding;
+      line-height: normal;
+      box-sizing: border-box;
+      font-size: 14px;
+      text-transform: none;
+      padding: 0.375rem 0.5rem;
+    }
+    select {
+      width: 100%;
+      line-height: 3rem;
+      height: 3rem;
+      display: inline-block;
+      border: 0.2px solid $white;
+      border-radius: 0;
+      background-color: $black;
+      color: $grey;
+      padding: $inputPadding;
+      line-height: normal;
+      font-size: 14px;
+      text-transform: uppercase;
+      option {
+        font-size: 14px;
+        text-transform: uppercase;
+        padding: 0.375rem 0.5rem;
+        display: block;
+        height: 100%;
+        color: inherit;
+        font-weight: 300;
+        white-space: nowrap;
+        background: $white;
+      }
+    }
+    input[type="checkbox"] {
+      width: 7%;
+      line-height: 3rem;
+      height: 3rem;
+      display: inline-block;
+      border: 0.0625rem solid $grey;
+      border-radius: 0;
+      background-color: $grey;
+    }
+    input[type="checkbox"]:not(:checked),
+    input[type="checkbox"]:checked {
+      width: 1.25em;
+      height: 1.25em;
+    }
+    button.button-blue-anim {
+      line-height: 48px;
+      line-height: 3rem;
+      font-size: 14px;
+      font-size: 0.875rem;
+      font-weight: 500;
+      color: #fff;
+      display: inline-block;
+      height: 3rem;
+      position: relative;
+      padding-left: 1.25rem;
+      padding-right: 1.25rem;
+      min-width: 10.3125rem;
+      margin: 15px 0;
+      background: $primary;
+      border: 0;
+      border-radius: 2px;
+      width: 100%;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+    }
+    button.button-blue-anim:disabled {
+      -webkit-transition: 1s;
+      transition: 1s;
+      background: $black;
+      border: 1px solid $white;
+      cursor: not-allowed;
+    }
+    button.button-blue-anim:enabled {
+      -webkit-transition: 1s;
+    }
+
+    .terms {
+      font-size: 13px;
+      text-transform: uppercase;
+      padding: 0.375rem 0.5rem;
+    }
+  }
+  .web_form_header {
+    text-align: center;
+    padding: 0 10px;
+    p {
+      font-size: 45px;
+      font-weight: 300;
+    }
+    .V_header {
+      font-size: 32px;
+    }
+    .V_subheader {
+      font-size: 12px;
+      text-align: left;
+      max-width: 100%;
+      padding: 10px;
+      line-height: 17px;
+      color: $grey;
+      font-weight: 500;
+    }
+    .info {
+      font-size: 12px;
+      line-height: 17px;
+    }
+    .center {
+      text-align: center;
+    }
+  }
+}
+.styled-checkbox {
+  position: absolute; // take it out of document flow
+  opacity: 0; // hide it
+
+  & + label {
+    position: relative;
+    cursor: pointer;
+    padding: 0;
+  }
+
+  // Box.
+  & + label:before {
+    content: "";
+    margin-right: 10px;
+    display: inline-block;
+    vertical-align: text-top;
+    width: 14px;
+    height: 14px;
+    background: $black;
+    border: 1px solid $grey;
+  }
+
+  // Box hover
+  &:hover + label:before {
+    background: $primary;
+  }
+
+  // Box focus
+  &:focus + label:before {
+    box-shadow: 0 0 0 3px rgba(0, 0, 0, 0.12);
+  }
+
+  // Box checked
+  &:checked + label:before {
+    background: $primary;
+  }
+
+  // Disabled state label.
+  &:disabled + label {
+    color: #b8b8b8;
+    cursor: auto;
+  }
+
+  // Disabled box.
+  &:disabled + label:before {
+    box-shadow: none;
+    background: #ddd;
+  }
+
+  // Checkmark. Could be replaced with an image
+  &:checked + label:after {
+    content: "";
+    position: absolute;
+    left: 2px;
+    top: 6px;
+    background: white;
+    width: 3px;
+    height: 3px;
+    box-shadow: 2px 0 0 white, 4px 0 0 white, 4px -2px 0 white, 4px -4px 0 white,
+      4px -6px 0 white, 4px -8px 0 white;
+    transform: rotate(50deg);
+  }
+}
+
+#termsAndConditions {
+  display: block;
+  margin-top: 15px;
+  color: $grey;
+  label {
+    color: $grey;
+    margin-top: -2px;
+    font-size: 11px;
+    a {
+      color: $grey;
+    }
+    .terms {
+      text-transform: uppercase;
+    }
+  }
+}
+footer {
+  position: relative;
+  bottom: 0;
+  font-size: 14px;
+  line-height: 22px;
+  color: $grey;
+  padding: 25px;
+}
+
+.left_col {
+  display: grid;
+  grid-gap: 0px;
+  grid-template-areas: "logo" "main" "footer";
+  grid-template-columns: 1fr;
+  .logo {
+    grid-area: logo;
+  }
+  .main {
+    grid-area: main;
+  }
+  .footer {
+    grid-area: footer;
+  }
+}
+
+@import "_mobile.scss";
