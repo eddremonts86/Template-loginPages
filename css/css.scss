@@ -10,7 +10,9 @@ body {
   font-family: Gotham SSm A, Gotham SSm B, Century Gothic, Futura, Arial,
     "Montserrat", sans-serif;
 }
-
+a {
+  color: $white !important;
+}
 .logo {
   text-align: left;
   img {
