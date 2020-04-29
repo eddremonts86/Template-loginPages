@@ -160,7 +160,8 @@ a {
       -webkit-transition: 1s;
       transition: 1s;
       background: $black;
-      border: 1px solid $white;
+      border: 1px solid #101010;
+      color: #323232;
       cursor: not-allowed;
     }
     button.button-blue-anim:enabled {

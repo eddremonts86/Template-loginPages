@@ -188,7 +188,8 @@ a {
   -webkit-transition: 1s;
   transition: 1s;
   background: #000;
-  border: 1px solid #dcdcdc;
+  border: 1px solid #101010;
+  color: #323232;
   cursor: not-allowed;
 }
 
