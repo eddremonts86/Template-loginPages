@@ -29,6 +29,8 @@
               <form>
                 <div>
                   <label for="email">Enter your e-mail</label>
+                </div>
+                <div>
                   <input
                     id="email"
                     onchange="validation()"
@@ -38,12 +40,13 @@
                   />
                 </div>
                 <div id="notice"></div>
-                <div>
-                  <label for="countries">Select your country</label>
+                <div><label for="countries">Select your country</label></div>
+                <div class="select">
                   <select
                     name="countries"
                     id="countries"
                     onchange="validation()"
+                    class="minimal"
                   >
                     <option value="1">Denmark</option>
                     <option value="2">Finland</option>
@@ -57,8 +60,9 @@
                     <option value="10">Hungary</option>
                   </select>
                 </div>
-                <div>
-                  <label for="languages">Select language</label>
+                <div><label for="languages">Select language</label></div>
+                <div class="select">
+                  
                   <select name="languages" id="lang" onchange="validation()">
                     <option value="1"> Danish (da)</option>
                     <option value="2"> Finnish (fi)</option>
