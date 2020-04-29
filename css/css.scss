@@ -26,6 +26,9 @@ body {
 .row {
   width: auto;
 }
+.center {
+  text-align: center;
+}
 
 .grid_col {
   display: grid;
@@ -191,9 +194,6 @@ body {
       font-size: 12px;
       line-height: 17px;
     }
-    .center {
-      text-align: center;
-    }
   }
 }
 .styled-checkbox {
@@ -299,6 +299,14 @@ footer {
   .footer {
     grid-area: footer;
   }
+}
+
+#info > form > div:nth-child(5) > p > div,
+#info > form > div:nth-child(5) > div > div,
+#info > form > div:nth-child(5) > p > div > div {
+  width: 100% !important;
+  padding: 0;
+  margin: 0;
 }
 
 @import "_mobile.scss";

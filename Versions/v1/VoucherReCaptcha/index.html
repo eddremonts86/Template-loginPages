@@ -56,12 +56,8 @@
                     id="campaign"
                     placeholder="XX-XX-XX-XX"
                   />
-                </div>
-                <div>
-                  <div class="g-recaptcha" data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"></div>
-                  <input style="display: none;" type="button" onclick="checkRecaptcha();" value="submit"></input>
-                </div>
-                <div id="termsAndConditions">
+                </div>               
+                <div id="termsAndConditions" class="center">
                   <input
                     onchange="validationVoucher()"
                     class="styled-checkbox"
@@ -78,6 +74,10 @@
                       >Term & Conditions</a
                     ></label
                   >
+                </div>
+                 <div class="center">
+                  <p class="g-recaptcha" data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"></p>
+                  <input style="display: none;" type="button" onclick="checkRecaptcha();" value="submit"></input>
                 </div>
                 <div>
                   <button
