@@ -356,6 +356,33 @@ footer {
   margin: 0;
 }
 
+@media only screen and (max-width: 1025px) {
+  .grid_col .flex-container {
+    min-height: 100vh;
+    height: auto;
+    padding: 0;
+    margin: 0;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-align: end;
+    -ms-flex-align: center;
+    align-items: flex-end;
+    -webkit-box-pack: end;
+    -ms-flex-pack: center;
+    justify-content: end;
+  }
+  .grid_col footer {
+    position: relative;
+    text-align: center;
+    width: auto;
+  }
+  .grid_col .web_form {
+    width: 100%;
+    max-width: 500px;
+  }
+}
+
 @media only screen and (max-width: 768px) {
   body {
     background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/c_scale,h_1024,w_768/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;

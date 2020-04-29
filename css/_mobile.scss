@@ -1,5 +1,31 @@
 @import "_variables.scss";
 @media only screen and(max-width: $layout-breakpoint-big) {
+  .grid_col {
+    .flex-container {
+      min-height: 100vh;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: end;
+      -ms-flex-align: center;
+      align-items: flex-end;
+      -webkit-box-pack: end;
+      -ms-flex-pack: center;
+      justify-content: end;
+    }
+    footer {
+      position: relative;
+      text-align: center;
+      width: auto;
+    }
+    .web_form {
+      width: 100%;
+      max-width: 500px;
+    }
+  }
 }
 @media only screen and(max-width: $layout-breakpoint-regular) {
   body {
