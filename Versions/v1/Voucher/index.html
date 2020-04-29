@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Montserrat:300,400,700,900&display=swap"
+      rel="stylesheet"
+    />
+    <link href="../../../css/css.css" rel="stylesheet" />
+    <script type="text/javascript" charset="UTF-8" src="/js/js.js"></script>
+  </head>
+  <body>
+    <section class="grid_col">
+      <section class="left_col">
+        <section class="logo">
+          <img
+            src="https://apps.hbonordic.com/webapp/v3.13.3/images/tenant/hbon-main.svg"
+          />
+        </section>
+        <section class="main flex-container">
+          <div class="web_form row">
+            <div class="web_form_header">
+              <p class="V_header"
+                >Sign up today and get <br />
+                1 month for free</p
+              >
+              <p class="V_subheader divVoucherSubheader">
+                Lorem Ipsum is simply dummy text of the printing and typesetting
+                industry. Lorem Ipsum has been the industry's standard dummy
+                text ever since the 1500s.Lorem Ipsum has been the industry's
+                standard dummy text ever since the 1500s</p
+              >
+            </div>
+            <div id="info" class="divVoucher">
+              <form>
+                <div>
+                  <label for="email">Enter your e-mail</label>
+                  <input
+                    onchange="validationVoucher()"
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="johndoe@email.com"
+                  />
+                </div>
+                <div id="notice"></div>
+                <div>
+                  <label for="campaign">Campaign code</label>
+                  <input
+                    onchange="validationVoucher()"
+                    type="text"
+                    name="campaign"
+                    id="campaign"
+                    placeholder="XX-XX-XX-XX"
+                  />
+                </div>
+                <div id="termsAndConditions">
+                  <input
+                    onchange="validationVoucher()"
+                    class="styled-checkbox"
+                    id="styled-checkbox-1"
+                    type="checkbox"
+                    name="TermConditions"
+                  />
+                  <label for="styled-checkbox-1"
+                    >I agree with the
+                    <a
+                      href="https://en.hbonordic.com/terms-and-conditions"
+                      target="_blank"
+                      class="terms"
+                      >Term & Conditions</a
+                    ></label
+                  >
+                </div>
+                <div>
+                  <button
+                    id="formButton"
+                    class="button-blue-anim"
+                    disabled
+                    onclick="sendInfo()"
+                    >Get started</button
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <p>
+            2020 Home Box Office, Inc. All Rights Reserved. <br />
+            Org. nr. : 556865-2845.</p
+          >
+        </footer>
+      </section>
+
+      <section class="right_col"></section>
+    </section>
+  </body>
+</html>

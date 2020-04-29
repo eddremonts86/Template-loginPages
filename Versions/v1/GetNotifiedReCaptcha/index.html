@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=Open+Sans"
+      rel="stylesheet"
+    />
+    <link href="../../../css/css.css" rel="stylesheet" />
+    <script type="text/javascript" charset="UTF-8" src="/js/js.js"></script>
+  </head>
+  <body>
+    <section class="grid_col">
+      <section class="left_col">
+        <section class="logo">
+          <img
+            src="https://apps.hbonordic.com/webapp/v3.13.3/images/tenant/hbon-main.svg"
+          />
+        </section>
+        <section class="main flex-container">
+          <div class="web_form row">
+            <div class="web_form_header">
+              <p>Be notified</p>
+            </div>
+            <div id="info">
+              <form>
+                <div>
+                  <label for="email">Enter your e-mail</label>
+                  <input
+                    id="email"
+                    onchange="validation()"
+                    type="email"
+                    name="email"
+                    placeholder="johndoe@email.com"
+                  />
+                </div>
+                <div id="notice"></div>
+                <div>
+                  <label for="countries">Select your country</label>
+                  <select
+                    name="countries"
+                    id="countries"
+                    onchange="validation()"
+                  >
+                    <option value="1">Denmark</option>
+                    <option value="2">Finland</option>
+                    <option value="3">Norway</option>
+                    <option value="4">Spain</option>
+                    <option value="5">Sweden</option>
+                    <option value="6">Portugal</option>
+                    <option value="7">Poland</option>
+                    <option value="8">Czech Republic</option>
+                    <option value="9">Romania</option>
+                    <option value="10">Hungary</option>
+                  </select>
+                </div>
+                <div>
+                  <label for="languages">Select language</label>
+                  <select name="languages" id="lang" onchange="validation()">
+                    <option value="1"> Danish (da)</option>
+                    <option value="2"> Finnish (fi)</option>
+                    <option value="3"> Norwegian (no)</option>
+                    <option value="4"> Spanish (es)</option>
+                    <option value="5"> Swedish (sv)</option>
+                    <option value="6"> Portuguese (pt)</option>
+                    <option value="7"> Polish (pl)</option>
+                    <option value="8"> Czech (cs)</option>
+                    <option value="9"> Romanian (ro)</option>
+                    <option value="10"> Hungarian (hu)</option>
+                  </select>
+                </div>
+                <div id="termsAndConditions">
+                  <input
+                    onchange="validation()"
+                    class="styled-checkbox"
+                    id="styled-checkbox-1"
+                    type="checkbox"
+                    name="TermConditions"
+                  />
+                  <label for="styled-checkbox-1"
+                    >I agree with the
+                    <a
+                      href="https://en.hbonordic.com/terms-and-conditions"
+                      target="_blank"
+                      class="terms"
+                      >Term & Conditions</a
+                    ></label
+                  >
+                </div>
+                <div>
+                  <button
+                    id="formButton"
+                    class="button-blue-anim"
+                    disabled
+                    onclick="sendInfo()"
+                    >Be notified</button
+                  >
+                </div>
+              </form>
+            </div>
+          </div>
+        </section>
+        <footer class="footer">
+          <p>
+            2020 Home Box Office, Inc. All Rights Reserved. <br />
+            Org. nr. : 556865-2845.</p
+          >
+        </footer>
+      </section>
+
+      <section class="right_col"></section>
+    </section>
+  </body>
+</html>
