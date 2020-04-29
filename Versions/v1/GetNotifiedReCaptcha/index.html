@@ -9,6 +9,7 @@
       rel="stylesheet"
     />
     <link href="../../../css/css.css" rel="stylesheet" />
+     <script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript" charset="UTF-8" src="/js/js.js"></script>
   </head>
   <body>
@@ -71,6 +72,12 @@
                     <option value="10"> Hungarian (hu)</option>
                   </select>
                 </div>
+
+                <div>
+                  <div class="g-recaptcha" data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"></div>
+                  <input style="display: none;" type="button" onclick="checkRecaptcha();" value="submit"></input>
+                </div>
+
                 <div id="termsAndConditions">
                   <input
                     onchange="validation()"
