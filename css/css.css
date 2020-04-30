@@ -165,12 +165,12 @@ footer {
   grid-area: footer;
 }
 
-#info > form > div:nth-child(5) > p > div,
-#info > form > div:nth-child(5) > div > div,
-#info > form > div:nth-child(5) > p > div > div {
+#info > form > div:nth-child(7) > p > div,
+#info > form > div:nth-child(8) > p > div {
   width: 100% !important;
   padding: 0;
   margin: 0;
+  height: 60px !important;
 }
 
 .web_form {
@@ -179,14 +179,16 @@ footer {
 }
 
 .web_form div {
-  margin-bottom: 15px;
+  margin-top: 0px;
+  margin-left: 10px;
+  margin-right: 10px;
+  margin-bottom: 5px;
   padding: 5px;
-  margin: 0 10px;
 }
 
 .web_form div label {
   font-size: 12px;
-  line-height: 35px;
+  line-height: 15px;
   color: #e8f0fe;
   font-weight: 300;
   -webkit-box-sizing: border-box;

@@ -131,12 +131,13 @@ footer {
     grid-area: footer;
   }
 }
-#info > form > div:nth-child(5) > p > div,
-#info > form > div:nth-child(5) > div > div,
-#info > form > div:nth-child(5) > p > div > div {
+
+#info > form > div:nth-child(7) > p > div,
+#info > form > div:nth-child(8) > p > div {
   width: 100% !important;
   padding: 0;
   margin: 0;
+  height: 60px !important;
 }
 @import "_inputs.scss";
 @import "_mobile.scss";
