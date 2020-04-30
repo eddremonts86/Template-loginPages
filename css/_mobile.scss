@@ -188,4 +188,9 @@
       }
     }
   }
+
+  #info > form > div:nth-child(7) > p > div,
+  #info > form > div:nth-child(8) > p > div {
+    height: 80px !important;
+  }
 }

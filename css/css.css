@@ -578,5 +578,9 @@ select::-ms-expand {
   .web_form .web_form_header .V_subheader {
     font-size: 14px;
   }
+  #info > form > div:nth-child(7) > p > div,
+  #info > form > div:nth-child(8) > p > div {
+    height: 80px !important;
+  }
 }
 /*# sourceMappingURL=css.css.map */
