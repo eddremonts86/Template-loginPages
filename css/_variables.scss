@@ -1,3 +1,15 @@
+/*fonts*/
+@font-face {
+  font-family: "Gotham";
+  src: url(/css/fonts/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: "sans-serif";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+}
+
+/*Variables*/
 $layout-breakpoint-big: 1025px;
 $layout-breakpoint-regular: 768px;
 $layout-breakpoint-small: 414px;
@@ -5,7 +17,7 @@ $layout-breakpoint-xsmall: 375px;
 $layout-breakpoint-xxsmall: 320px;
 $black: #000;
 $grey: #a1a1a1;
-$white: #e8f0fe;
+$white: #ffffff;
 $inputPadding: 0 0.5rem;
 $primary: #03a3da;
 $viewH: 100vh;
@@ -14,3 +26,9 @@ $bgImg: "https://res.cloudinary.com/wundermanthompsontest/image/upload/v15880828
 $bgImg_regular: "https://res.cloudinary.com/wundermanthompsontest/image/upload/c_scale,h_1024,w_768/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg";
 $bgImg_small: "https://res.cloudinary.com/wundermanthompsontest/image/upload/c_scale,h_730,w_414/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg";
 $bgImg_xsmall: "https://res.cloudinary.com/wundermanthompsontest/image/upload/c_scale,h_640,w_375/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg";
+$inputBaseInactive: #dcdcdc;
+$inputBaseInactiveBorder: #828282;
+$inputBaseFocus: #ffffff;
+$inputBaseFocusBorder: #46a2d5;
+$ButtonBase: #00a3da;
+$ButtonHover: #007da7;

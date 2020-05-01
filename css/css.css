@@ -1,15 +1,27 @@
 /* ---------------------------------------*/
+/*fonts*/
+@font-face {
+  font-family: "Gotham";
+  src: url(/css/fonts/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: "sans-serif";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+}
+
+/*Variables*/
 /* ---------------------------------------*/
 body {
   background: #000;
   padding: 0px;
   margin: 0px;
-  color: #e8f0fe;
-  font-family: Gotham SSm A, Gotham SSm B, Century Gothic, Futura, Arial, "Montserrat", sans-serif;
+  color: #ffffff;
+  font-family: Gotham, sans-serif, Arial;
 }
 
 a {
-  color: #e8f0fe !important;
+  color: #ffffff !important;
 }
 
 .logo {
@@ -23,7 +35,7 @@ a {
 }
 
 #notice {
-  font-size: 11px;
+  font-size: 1.5rem;
   color: #8e0000;
 }
 
@@ -86,43 +98,44 @@ a {
 }
 
 .web_form .web_form_header p {
-  font-size: 45px;
+  font-size: 2.6rem;
   font-weight: 300;
 }
 
 .web_form .web_form_header .V_header {
-  font-size: 32px;
+  font-size: 2.6rem;
+  font-weight: 300;
 }
 
 .web_form .web_form_header .V_subheader {
-  font-size: 12px;
+  font-size: 1rem;
   text-align: left;
   max-width: 100%;
   padding: 10px;
-  line-height: 17px;
-  color: #a1a1a1;
+  line-height: 1.5rem;
+  color: #ffffff;
   font-weight: 500;
 }
 
 .web_form .web_form_header .info {
-  font-size: 12px;
-  line-height: 17px;
+  font-size: 1rem;
+  line-height: 1.5rem;
 }
 
 #termsAndConditions {
   display: block;
   margin-top: 15px;
-  color: #a1a1a1;
+  color: #ffffff;
 }
 
 #termsAndConditions label {
-  color: #a1a1a1;
+  color: #ffffff;
   margin-top: -2px;
-  font-size: 11px;
+  font-size: 0.8rem;
 }
 
 #termsAndConditions label a {
-  color: #a1a1a1;
+  color: #ffffff;
 }
 
 #termsAndConditions label .terms {
@@ -132,9 +145,9 @@ a {
 footer {
   position: relative;
   bottom: 0;
-  font-size: 14px;
-  line-height: 22px;
-  color: #a1a1a1;
+  font-size: 1rem;
+  line-height: 1.4rem;
+  color: #ffffff;
   padding: 25px;
 }
 
@@ -165,12 +178,20 @@ footer {
   grid-area: footer;
 }
 
-#info > form > div:nth-child(7) > p > div,
-#info > form > div:nth-child(8) > p > div {
+#info form div:nth-child(7) p div,
+#info form div:nth-child(8) p div {
   width: 100% !important;
   padding: 0;
   margin: 0;
   height: 60px !important;
+}
+
+#info ul li {
+  padding: 5px 0;
+}
+
+#info ul li a {
+  text-decoration: none;
 }
 
 .web_form {
@@ -187,9 +208,9 @@ footer {
 }
 
 .web_form div label {
-  font-size: 12px;
+  font-size: 0.8rem;
   line-height: 15px;
-  color: #e8f0fe;
+  color: #ffffff;
   font-weight: 300;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -201,9 +222,9 @@ footer {
   line-height: 3rem;
   height: 3rem;
   display: inline-block;
-  border: 0.2px solid #e8f0fe;
+  border: 1px solid #828282;
   border-radius: 0;
-  background-color: #e8f0fe;
+  background-color: #dcdcdc;
   color: #000;
   padding: 0 0.5rem;
   line-height: normal;
@@ -219,10 +240,10 @@ footer {
   line-height: 3rem;
   height: 3rem;
   display: inline-block;
-  border: 0.2px solid #e8f0fe !important;
+  border: 0.2px solid #ffffff !important;
   border-radius: 0;
   background-color: #000;
-  color: #e8f0fe;
+  color: #ffffff;
   padding: 0 0.5rem;
   line-height: normal;
   font-size: 14px;
@@ -238,7 +259,7 @@ footer {
   line-height: 22px;
   font-weight: 300;
   white-space: nowrap;
-  background: #e8f0fe;
+  background: #ffffff;
 }
 
 .web_form div input[type="checkbox"] {
@@ -259,10 +280,8 @@ footer {
 
 .web_form div button.button-blue-anim {
   line-height: 48px;
-  line-height: 3rem;
   font-size: 14px;
-  font-size: 0.875rem;
-  font-weight: 500;
+  font-weight: 700;
   color: #fff;
   display: inline-block;
   height: 3rem;
@@ -271,12 +290,18 @@ footer {
   padding-right: 1.25rem;
   min-width: 10.3125rem;
   margin: 15px 0;
-  background: #03a3da;
+  background: #00a3da;
+  border-radius: 4px;
   border: 0;
-  border-radius: 2px;
   width: 100%;
   text-transform: uppercase;
   letter-spacing: 3px;
+}
+
+.web_form div button.button-blue-anim:hover {
+  background: #007da7;
+  -webkit-transition: 0.2s;
+  transition: 0.2s;
 }
 
 .web_form div button.button-blue-anim:disabled {
@@ -318,7 +343,8 @@ footer {
   width: 14px;
   height: 14px;
   background: #000;
-  border: 1px solid #a1a1a1;
+  border: 1px solid #ffffff;
+  border-radius: 4px;
 }
 
 .styled-checkbox:hover + label:before {
@@ -404,9 +430,26 @@ select::-ms-expand {
 }
 
 .select:hover::after {
-  color: #e8f0fe;
+  color: #ffffff;
 }
 
+#campaign:focus, #campaign:active, #campaign:focus-visible {
+  border: 1px solid #46a2d5 !important;
+  background-color: #ffffff !important;
+}
+
+/*fonts*/
+@font-face {
+  font-family: "Gotham";
+  src: url(/css/fonts/Gotham-Light.otf);
+}
+
+@font-face {
+  font-family: "sans-serif";
+  src: url("https://fonts.googleapis.com/css?family=Open+Sans");
+}
+
+/*Variables*/
 @media only screen and (max-width: 1025px) {
   .grid_col .flex-container {
     min-height: 100vh;
@@ -476,8 +519,8 @@ select::-ms-expand {
   .grid_col #info {
     background: #000;
     padding: 25px;
-    font-size: 18px;
-    line-height: 26px;
+    /*font-size: 18px;
+      line-height: 26px;*/
   }
   .grid_col .web_form {
     width: 100%;
@@ -521,8 +564,8 @@ select::-ms-expand {
   }
   .grid_col #info {
     padding: 20px;
-    font-size: 16px;
-    line-height: 25px;
+    /*font-size: 16px;
+      line-height: 25px;*/
   }
   .grid_col .flex-container {
     -webkit-box-align: end;
@@ -536,7 +579,6 @@ select::-ms-expand {
     text-align: center;
   }
   .web_form .web_form_header .V_subheader {
-    font-size: 14px;
     text-align: center;
     width: 100%;
     padding: 0;
@@ -563,8 +605,6 @@ select::-ms-expand {
   }
   .grid_col #info {
     padding: 14px;
-    font-size: 14px;
-    line-height: 24px;
   }
   .web_form .web_form_header .V_header {
     font-size: 28px;
@@ -572,14 +612,8 @@ select::-ms-expand {
 }
 
 @media only screen and (max-width: 320px) {
-  .web_form .web_form_header .V_header {
-    font-size: 25px;
-  }
-  .web_form .web_form_header .V_subheader {
-    font-size: 14px;
-  }
-  #info > form > div:nth-child(7) > p > div,
-  #info > form > div:nth-child(8) > p > div {
+  #info form div:nth-child(7) p div,
+  #info form div:nth-child(8) p div {
     height: 80px !important;
   }
 }

@@ -8,7 +8,7 @@
     margin-bottom: 5px;
     padding: 5px;
     label {
-      font-size: 12px;
+      font-size: 0.8rem;
       line-height: 15px;
       color: $white;
       font-weight: 300;
@@ -20,9 +20,9 @@
       line-height: 3rem;
       height: 3rem;
       display: inline-block;
-      border: 0.2px solid $white;
+      border: 1px solid $inputBaseInactiveBorder;
       border-radius: 0;
-      background-color: $white;
+      background-color: $inputBaseInactive;
       color: $black;
       padding: $inputPadding;
       line-height: normal;
@@ -71,38 +71,41 @@
       width: 1.25em;
       height: 1.25em;
     }
-    button.button-blue-anim {
-      line-height: 48px;
-      line-height: 3rem;
-      font-size: 14px;
-      font-size: 0.875rem;
-      font-weight: 500;
-      color: #fff;
-      display: inline-block;
-      height: 3rem;
-      position: relative;
-      padding-left: 1.25rem;
-      padding-right: 1.25rem;
-      min-width: 10.3125rem;
-      margin: 15px 0;
-      background: $primary;
-      border: 0;
-      border-radius: 2px;
-      width: 100%;
-      text-transform: uppercase;
-      letter-spacing: 3px;
+    button {
+      &.button-blue-anim {
+        line-height: 48px;
+        font-size: 14px;
+        font-weight: 700;
+        color: #fff;
+        display: inline-block;
+        height: 3rem;
+        position: relative;
+        padding-left: 1.25rem;
+        padding-right: 1.25rem;
+        min-width: 10.3125rem;
+        margin: 15px 0;
+        background: $ButtonBase;
+        border-radius: 4px;
+        border: 0;
+        width: 100%;
+        text-transform: uppercase;
+        letter-spacing: 3px;
+        &:hover {
+          background: $ButtonHover;
+          transition: 0.2s;
+        }
+        &:disabled {
+          transition: 1s;
+          background: $black;
+          border: 1px solid #101010;
+          color: #323232;
+          cursor: not-allowed;
+        }
+        &:enabled {
+          transition: 1s;
+        }
+      }
     }
-    button.button-blue-anim:disabled {
-      transition: 1s;
-      background: $black;
-      border: 1px solid #101010;
-      color: #323232;
-      cursor: not-allowed;
-    }
-    button.button-blue-anim:enabled {
-      transition: 1s;
-    }
-
     .terms {
       font-size: 13px;
       text-transform: uppercase;
@@ -128,7 +131,8 @@
     width: 14px;
     height: 14px;
     background: $black;
-    border: 1px solid $grey;
+    border: 1px solid $white;
+    border-radius: 4px;
   }
 
   &:hover + label:before {
@@ -201,4 +205,13 @@ select::-ms-expand {
 }
 .select:hover::after {
   color: $white;
+}
+
+#campaign {
+  &:focus,
+  &:active,
+  &:focus-visible {
+    border: 1px solid $inputBaseFocusBorder !important;
+    background-color: $inputBaseFocus !important;
+  }
 }
