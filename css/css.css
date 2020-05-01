@@ -60,7 +60,7 @@ a {
   -ms-grid-row: 1;
   -ms-grid-column: 2;
   grid-area: right_col;
-  background: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg");
+  background: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/b_rgb:000000,bo_0px_solid_rgb:000,o_49/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg");
   background-position: center center;
   background-size: cover;
   background-repeat: no-repeat;
@@ -98,7 +98,7 @@ a {
 }
 
 .web_form .web_form_header p {
-  font-size: 2.6rem;
+  font-size: 1rem;
   font-weight: 300;
 }
 
@@ -451,6 +451,9 @@ select::-ms-expand {
 
 /*Variables*/
 @media only screen and (max-width: 1025px) {
+  .grid_col .left_col {
+    background: transparent;
+  }
   .grid_col .flex-container {
     min-height: 100vh;
     height: auto;
@@ -475,11 +478,36 @@ select::-ms-expand {
     width: 100%;
     max-width: 500px;
   }
+  .grid_col .web_form .web_form_header {
+    text-align: center;
+    padding: 0 10px;
+  }
+  .grid_col .web_form .web_form_header p {
+    font-size: 1rem;
+    font-weight: 300;
+  }
+  .grid_col .web_form .web_form_header .V_header {
+    font-size: 1.8rem;
+    font-weight: 300;
+  }
+  .grid_col .web_form .web_form_header .V_subheader {
+    font-size: 1rem;
+    text-align: left;
+    max-width: 100%;
+    padding: 10px;
+    line-height: 1.5rem;
+    color: #ffffff;
+    font-weight: 500;
+  }
+  .grid_col .web_form .web_form_header .info {
+    font-size: 1rem;
+    line-height: 1.5rem;
+  }
 }
 
 @media only screen and (max-width: 768px) {
   body {
-    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/c_scale,h_1024,w_768/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
+    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/b_rgb:000000,bo_0px_solid_rgb:000,o_49,c_scale,h_1024,w_768/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -505,7 +533,6 @@ select::-ms-expand {
     height: 100%;
   }
   .grid_col .left_col {
-    background: #000000c4;
     margin: 0px;
   }
   .grid_col .right_col {
@@ -519,8 +546,6 @@ select::-ms-expand {
   .grid_col #info {
     background: #000;
     padding: 25px;
-    /*font-size: 18px;
-      line-height: 26px;*/
   }
   .grid_col .web_form {
     width: 100%;
@@ -552,28 +577,29 @@ select::-ms-expand {
 
 @media only screen and (max-width: 414px) {
   body {
-    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/c_scale,h_730,w_414/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
+    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/b_rgb:000000,bo_0px_solid_rgb:000,o_49,c_scale,h_730,w_414/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   .grid_col .left_col {
-    background: #000000c4;
     margin: 0px;
   }
   .grid_col #info {
     padding: 20px;
-    /*font-size: 16px;
-      line-height: 25px;*/
   }
   .grid_col .flex-container {
+    min-height: 70vh;
     -webkit-box-align: end;
     -ms-flex-align: center;
-    align-items: flex-end;
+    align-items: flex-start;
     -webkit-box-pack: end;
     -ms-flex-pack: center;
     justify-content: end;
+  }
+  .web_form .web_form_header {
+    padding: 0 0px;
   }
   .web_form .web_form_header .divVoucherSubheader {
     text-align: center;
@@ -582,7 +608,6 @@ select::-ms-expand {
     text-align: center;
     width: 100%;
     padding: 0;
-    line-height: 17px;
     color: #a1a1a1;
     font-weight: 500;
   }
@@ -593,15 +618,17 @@ select::-ms-expand {
 
 @media only screen and (max-width: 375px) {
   .body {
-    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/c_scale,h_640,w_375/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
+    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/b_rgb:000000,bo_0px_solid_rgb:000,o_49,c_scale,h_640,w_375/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
   }
   .grid_col .left_col {
-    background: #000000c4;
     margin: 0px;
+  }
+  .grid_col .left_col .flex-container {
+    min-height: 60vh;
   }
   .grid_col #info {
     padding: 14px;

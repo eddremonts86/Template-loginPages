@@ -1,6 +1,9 @@
 @import "_variables.scss";
 @media only screen and(max-width: $layout-breakpoint-big) {
   .grid_col {
+    .left_col {
+      background: transparent;
+    }
     .flex-container {
       min-height: 100vh;
       height: auto;
@@ -24,6 +27,31 @@
     .web_form {
       width: 100%;
       max-width: 500px;
+      .web_form_header {
+        text-align: center;
+        padding: 0 10px;
+        p {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+        .V_header {
+          font-size: 1.8rem;
+          font-weight: 300;
+        }
+        .V_subheader {
+          font-size: 1rem;
+          text-align: left;
+          max-width: 100%;
+          padding: 10px;
+          line-height: 1.5rem;
+          color: $white;
+          font-weight: 500;
+        }
+        .info {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
     }
   }
 }
@@ -52,7 +80,6 @@
       height: 100%;
     }
     .left_col {
-      background: $colBG;
       margin: 0px;
     }
     .right_col {
@@ -66,8 +93,6 @@
     #info {
       background: $black;
       padding: 25px;
-      /*font-size: 18px;
-      line-height: 26px;*/
     }
     .web_form {
       width: 100%;
@@ -111,18 +136,16 @@
   }
   .grid_col {
     .left_col {
-      background: $colBG;
       margin: 0px;
     }
     #info {
       padding: 20px;
-      /*font-size: 16px;
-      line-height: 25px;*/
     }
     .flex-container {
+      min-height: 70vh;
       -webkit-box-align: end;
       -ms-flex-align: center;
-      align-items: flex-end;
+      align-items: flex-start;
       -webkit-box-pack: end;
       -ms-flex-pack: center;
       justify-content: end;
@@ -130,15 +153,14 @@
   }
   .web_form {
     .web_form_header {
+      padding: 0 0px;
       .divVoucherSubheader {
         text-align: center;
       }
       .V_subheader {
-        //font-size: 14px;
         text-align: center;
         width: 100%;
         padding: 0;
-        line-height: 17px;
         color: #a1a1a1;
         font-weight: 500;
       }
@@ -159,13 +181,13 @@
   }
   .grid_col {
     .left_col {
-      background: $colBG;
       margin: 0px;
+      .flex-container {
+        min-height: 60vh;
+      }
     }
     #info {
       padding: 14px;
-      //font-size: 14px;
-      //line-height: 24px;
     }
   }
   .web_form {
@@ -181,10 +203,8 @@
   .web_form {
     .web_form_header {
       .V_header {
-        // font-size: 25px;
       }
       .V_subheader {
-        //font-size: 14px;
       }
     }
   }
