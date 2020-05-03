@@ -1,6 +1,4 @@
-function sendInfo() {
-
-}
+function sendInfo() {}
 
 function validation() {
     const email = document.getElementById("email").value
