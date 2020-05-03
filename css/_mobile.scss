@@ -5,7 +5,7 @@
       background: transparent;
     }
     .flex-container {
-      min-height: 100vh;
+      min-height: 70vh;
       height: auto;
       padding: 0;
       margin: 0;
@@ -14,15 +14,17 @@
       display: flex;
       -webkit-box-align: end;
       -ms-flex-align: center;
-      align-items: flex-end;
+      align-items: flex-start;
       -webkit-box-pack: end;
       -ms-flex-pack: center;
       justify-content: end;
     }
     footer {
       position: relative;
-      text-align: center;
-      width: auto;
+      bottom: 0;
+      text-align: left;
+      margin-left: 0px;
+      margin-bottom: 25px;
     }
     .web_form {
       width: 100%;
@@ -55,6 +57,26 @@
     }
   }
 }
+@media only screen and(min-width: $layout-breakpoint-big) {
+  .grid_col {
+    .flex-container {
+      min-height: 70vh;
+      height: auto;
+      padding: 0;
+      margin: 0;
+      display: -webkit-box;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-box-align: center;
+      -ms-flex-align: center;
+      align-items: center;
+      -webkit-box-pack: center;
+      -ms-flex-pack: center;
+      justify-content: center;
+    }
+  }
+}
+
 @media only screen and(max-width: $layout-breakpoint-regular) {
   body {
     background-image: url($bgImg_regular) !important;
@@ -86,9 +108,9 @@
       display: none;
     }
     footer {
-      position: relative;
       text-align: center;
-      width: auto;
+      margin-left: 0;
+      width: 100%;
     }
     #info {
       background: $black;
@@ -97,9 +119,35 @@
     .web_form {
       width: 100%;
       max-width: 100%;
+      .web_form_header {
+        text-align: center;
+        padding: 0 10px;
+        p {
+          font-size: 1rem;
+          font-weight: 300;
+        }
+        .V_header {
+          font-size: 2.8rem;
+          font-weight: 300;
+        }
+        .V_subheader {
+          font-size: 1rem;
+          text-align: left;
+          max-width: 100%;
+          padding: 10px;
+          line-height: 1.5rem;
+          color: $white;
+          font-weight: 500;
+        }
+        .info {
+          font-size: 1rem;
+          line-height: 1.5rem;
+        }
+      }
     }
+
     .flex-container {
-      min-height: 100vh;
+      min-height: 0vh;
       height: auto;
       padding: 0;
       margin: 0;
@@ -108,7 +156,7 @@
       display: flex;
       -webkit-box-align: end;
       -ms-flex-align: center;
-      align-items: flex-end;
+      align-items: flex-start;
       -webkit-box-pack: end;
       -ms-flex-pack: center;
       justify-content: end;
@@ -150,6 +198,9 @@
       -ms-flex-pack: center;
       justify-content: end;
     }
+    .footer {
+      position: relative;
+    }
   }
   .web_form {
     .web_form_header {
@@ -167,6 +218,16 @@
     }
     .divVoucher {
       margin: 0;
+    }
+  }
+  #termsAndConditions {
+    margin: 15px 0 !important;
+    text-align: center;
+    label {
+      font-size: 10px;
+      .terms {
+        font-size: 14px;
+      }
     }
   }
 }
@@ -189,11 +250,25 @@
     #info {
       padding: 14px;
     }
+    .footer {
+      position: relative;
+    }
   }
   .web_form {
     .web_form_header {
       .V_header {
         font-size: 28px;
+      }
+    }
+  }
+
+  #termsAndConditions {
+    margin: 15px 0 !important;
+    text-align: center;
+    label {
+      font-size: 10px;
+      .terms {
+        font-size: 12px;
       }
     }
   }
@@ -211,12 +286,39 @@
   #info {
     form {
       div:nth-child(7),
-      div:nth-child(8) {
+      div:nth-child(9) {
         p {
           div {
             height: 80px !important;
           }
         }
+      }
+    }
+  }
+
+  .grid_col {
+    .web_form {
+      .web_form_header .V_subheader {
+        padding: 0;
+      }
+    }
+    footer {
+      text-align: center;
+      margin-left: 0;
+      width: 100%;
+      position: unset;
+      margin: 0;
+      font-size: 0.8rem;
+    }
+  }
+
+  #termsAndConditions {
+    margin: 15px 0 !important;
+    text-align: center;
+    label {
+      font-size: 10px;
+      .terms {
+        font-size: 10px;
       }
     }
   }
