@@ -3,9 +3,9 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign up</title>     
+    <title>Sign up</title>
     <link href=" /css/css.css" rel="stylesheet" />
-     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript" charset="UTF-8" src="/js/js.js"></script>
   </head>
   <body>
@@ -32,10 +32,10 @@
               <form>
                 <div>
                   <label for="email">Enter your e-mail</label>
-                  </div>
+                </div>
                 <div>
                   <input
-                    onchange="validationVoucher()"
+                    onchange="validationVoucherCaptcha()"
                     type="email"
                     name="email"
                     id="email"
@@ -45,19 +45,19 @@
                 <div id="notice"></div>
                 <div>
                   <label for="campaign">Campaign code</label>
-                  </div>
+                </div>
                 <div>
                   <input
-                    onchange="validationVoucher()"
+                    onchange="validationVoucherCaptcha()"
                     type="text"
                     name="campaign"
                     id="campaign"
                     placeholder="XX-XX-XX-XX"
                   />
-                </div>               
+                </div>
                 <div id="termsAndConditions" class="center">
                   <input
-                    onchange="validationVoucher()"
+                    onchange="validationVoucherCaptcha()"
                     class="styled-checkbox"
                     id="styled-checkbox-1"
                     type="checkbox"
@@ -73,16 +73,19 @@
                     ></label
                   >
                 </div>
-                 <div class="center">
-                  <p class="g-recaptcha" data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"></p>
-                  <input style="display: none;" type="button" onclick="checkRecaptcha('Voucher');" value="submit"></input>
+                <div class="center">
+                  <p
+                    class="g-recaptcha"
+                    data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"
+                    data-callback-success="validationVoucherCaptcha"
+                  ></p>
                 </div>
                 <div>
                   <button
                     id="formButton"
                     class="button-blue-anim"
                     disabled
-                    onclick="sendInfo()"
+                    onclick="sendInfo('Voucher')"
                     >Get started</button
                   >
                 </div>

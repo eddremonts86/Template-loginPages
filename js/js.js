@@ -29,6 +29,33 @@ function validationVoucher() {
     }
 }
 
+function validationNotifiedCaptcha() {
+    const email = document.getElementById("email").value
+    const countries = document.getElementById("countries").value
+    const lang = document.getElementById("lang").value
+    const terms = document.getElementById("styled-checkbox-1").checked
+    if (email && emailValidation(email) && countries && lang && terms && this.captchaValidation()) {
+        document.getElementById("formButton").disabled = false
+        return true
+    } else {
+        document.getElementById("formButton").disabled = true
+        return false
+    }
+}
+
+function validationVoucherCaptcha() {
+    const email = document.getElementById("email").value
+    const campaign = document.getElementById("campaign").value
+    const terms = document.getElementById("styled-checkbox-1").checked
+    if (email && emailValidation(email) && campaign && terms && this.captchaValidation()) {
+        document.getElementById("formButton").disabled = false
+        return true
+    } else {
+        document.getElementById("formButton").disabled = true
+        return false
+    }
+}
+
 function emailValidation(email) {
     if (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)) {
         document.getElementById("notice").innerHTML = ""
@@ -39,17 +66,12 @@ function emailValidation(email) {
 
 }
 
-function checkRecaptcha(type) {
+function captchaValidation() {
     var response = grecaptcha.getResponse();
     if (response.length == 0) {
-        sessionStorage.setItem('captcha', 'false');
+        return false;
     } else {
-        sessionStorage.setItem('captcha', 'true');
-        if (type === 'Voucher')
-            this.validationVoucher()
-        else {
-            this.validation()
-        }
+        return true;
     }
 }
 

@@ -3,16 +3,16 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Be notified</title>     
+    <title>Be notified</title>
     <link href="/css/css.css" rel="stylesheet" />
-     <script src="https://www.google.com/recaptcha/api.js"></script>
+    <script src="https://www.google.com/recaptcha/api.js"></script>
     <script type="text/javascript" charset="UTF-8" src="/js/js.js"></script>
   </head>
   <body>
     <section class="grid_col">
       <section class="left_col">
         <section class="logo">
-         <a href="/"><img src="/img/hbon-main.svg" /></a>
+          <a href="/"><img src="/img/hbon-main.svg" /></a>
         </section>
         <section class="main flex-container">
           <div class="web_form row">
@@ -27,7 +27,7 @@
                 <div>
                   <input
                     id="email"
-                    onchange="validation()"
+                    onchange="validationNotifiedCaptcha()"
                     type="email"
                     name="email"
                     placeholder="johndoe@email.com"
@@ -39,7 +39,7 @@
                   <select
                     name="countries"
                     id="countries"
-                    onchange="validation()"
+                    onchange="validationNotifiedCaptcha()"
                     class="minimal"
                   >
                     <option value="1">Denmark</option>
@@ -56,8 +56,11 @@
                 </div>
                 <div><label for="languages">Select language</label></div>
                 <div class="select">
-                  
-                  <select name="languages" id="lang" onchange="validation()">
+                  <select
+                    name="languages"
+                    id="lang"
+                    onchange="validationNotifiedCaptcha()"
+                  >
                     <option value="1"> Danish (da)</option>
                     <option value="2"> Finnish (fi)</option>
                     <option value="3"> Norwegian (no)</option>
@@ -73,7 +76,7 @@
 
                 <div id="termsAndConditions" class="center">
                   <input
-                    onchange="validation()"
+                    onchange="validationNotifiedCaptcha()"
                     class="styled-checkbox"
                     id="styled-checkbox-1"
                     type="checkbox"
@@ -91,8 +94,11 @@
                 </div>
 
                 <div class="center">
-                  <p class="g-recaptcha" data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"></p>
-                  <input style="display: none;" type="button" onclick="checkRecaptcha('notified');" value="submit"></input>
+                  <p
+                    class="g-recaptcha"
+                    data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"
+                    data-callback-success="validationNotifiedCaptcha"
+                  ></p>
                 </div>
 
                 <div>
@@ -100,7 +106,7 @@
                     id="formButton"
                     class="button-blue-anim"
                     disabled
-                    onclick="sendInfo()"
+                    onclick="sendInfo('notified')"
                     >Be notified</button
                   >
                 </div>
