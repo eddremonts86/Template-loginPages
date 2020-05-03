@@ -30,6 +30,7 @@ function validationVoucher() {
 }
 
 function validationNotifiedCaptcha() {
+    console.log('dsd')
     const email = document.getElementById("email").value
     const countries = document.getElementById("countries").value
     const lang = document.getElementById("lang").value
@@ -44,6 +45,7 @@ function validationNotifiedCaptcha() {
 }
 
 function validationVoucherCaptcha() {
+    console.log('dsd')
     const email = document.getElementById("email").value
     const campaign = document.getElementById("campaign").value
     const terms = document.getElementById("styled-checkbox-1").checked
