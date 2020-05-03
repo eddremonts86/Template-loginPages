@@ -39,18 +39,20 @@ function emailValidation(email) {
 
 }
 
-function checkRecaptcha() {
+function checkRecaptcha(type) {
     var response = grecaptcha.getResponse();
-    console.log(response)
     if (response.length == 0) {
-        //reCaptcha not verified
-        alert("no pass");
+        sessionStorage.setItem('captcha', 'false');
     } else {
-        //reCaptch verified
-        alert("pass");
+        sessionStorage.setItem('captcha', 'true');
+        if (type === 'Voucher')
+            this.validationVoucher()
+        else {
+            this.validation()
+        }
     }
 }
-// implement on the backend
+
 function backend_API_challenge() {
     var response = grecaptcha.getResponse();
     $.ajax({
@@ -63,7 +65,7 @@ function backend_API_challenge() {
         },
         contentType: 'application/x-www-form-urlencoded',
         success: function (data) {
-            console.log(data);
+            console.log('data');
         }
     });
 }
