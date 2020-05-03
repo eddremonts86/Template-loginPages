@@ -40,6 +40,8 @@ function emailValidation(email) {
 }
 
 function checkRecaptcha() {
+    console.log("ajkbdoldknm ")
+    /*
     var response = grecaptcha.getResponse();
     console.log(response)
     if (response.length == 0) {
@@ -48,7 +50,7 @@ function checkRecaptcha() {
     } else {
         //reCaptch verified
         alert("pass");
-    }
+    }*/
 }
 // implement on the backend
 function backend_API_challenge() {
