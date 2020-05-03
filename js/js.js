@@ -41,6 +41,7 @@ function emailValidation(email) {
 
 function checkRecaptcha() {
     var response = grecaptcha.getResponse();
+    console.log(response)
     if (response.length == 0) {
         //reCaptcha not verified
         alert("no pass");
