@@ -28,7 +28,6 @@ function validationVoucher() {
 }
 
 function validationNotifiedCaptcha() {
-    console.log('dsd')
     const email = document.getElementById("email").value
     const countries = document.getElementById("countries").value
     const lang = document.getElementById("lang").value
