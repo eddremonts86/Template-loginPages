@@ -94,15 +94,6 @@
           background: $ButtonHover;
           transition: 0.2s;
         }
-        &:disabled {
-          transition: 1s;
-          background: $ButtonBase;
-          color: #323232;
-          cursor: not-allowed;
-        }
-        &:enabled {
-          transition: 1s;
-        }
       }
     }
     .terms {

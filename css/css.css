@@ -290,7 +290,7 @@ footer {
   padding-right: 1.25rem;
   min-width: 10.3125rem;
   margin: 15px 0;
-  background: #00a3da;
+  background: #46a2d5;
   border-radius: 4px;
   border: 0;
   width: 100%;
@@ -299,23 +299,9 @@ footer {
 }
 
 .web_form div button.button-blue-anim:hover {
-  background: #007da7;
+  background: #347ca3;
   -webkit-transition: 0.2s;
   transition: 0.2s;
-}
-
-.web_form div button.button-blue-anim:disabled {
-  -webkit-transition: 1s;
-  transition: 1s;
-  background: #000;
-  border: 1px solid #101010;
-  color: #323232;
-  cursor: not-allowed;
-}
-
-.web_form div button.button-blue-anim:enabled {
-  -webkit-transition: 1s;
-  transition: 1s;
 }
 
 .web_form div .terms {
@@ -702,7 +688,7 @@ select::-ms-expand {
 
 @media only screen and (max-width: 414px) {
   body {
-    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/b_rgb:000000,bo_0px_solid_rgb:000,o_49,c_scale,h_730,w_414/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
+    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/b_rgb:000000,bo_0px_solid_rgb:000,o_49,c_scale,h_730,w_500/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
@@ -756,7 +742,7 @@ select::-ms-expand {
 
 @media only screen and (max-width: 375px) {
   .body {
-    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/b_rgb:000000,bo_0px_solid_rgb:000,o_49,c_scale,h_640,w_375/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
+    background-image: url("https://res.cloudinary.com/wundermanthompsontest/image/upload/b_rgb:000000,bo_0px_solid_rgb:000,o_49,c_scale,h_640,w_500/v1588082863/f4b6c44c4cfc8ab4b1d7a275f95970e1_qu6jxj.jpg") !important;
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
