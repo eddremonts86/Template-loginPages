@@ -1,4 +1,15 @@
-function sendInfo() {}
+function sendInfo() {
+
+  let number = Math.floor(Math.random() * 10);
+  console.log(number)
+  console.log(number % 2)
+  if (number % 2 == 0) {
+    window.location.replace("/versions/v1/general/thanks.html");
+  } else {
+    window.location.replace("/versions/v1/general/error.html");
+  }
+
+}
 
 function validation() {
   const email = document.getElementById("email").value;

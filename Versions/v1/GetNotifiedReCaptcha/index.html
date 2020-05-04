@@ -20,114 +20,108 @@
               <p class="V_header">Be notified</p>
             </div>
             <div id="info">
-              <form>
-                <div>
-                  <label for="email">Enter your e-mail</label>
-                </div>
-                <div>
-                  <input
-                    id="email"
-                    onchange="validationNotifiedCaptcha()"
-                    type="email"
-                    name="email"
-                    placeholder="johndoe@email.com"
-                  />
-                </div>
-                <div id="notice"></div>
-                <div><label for="countries">Select your country</label></div>
-                <div class="select">
-                  <select
-                    name="countries"
-                    id="countries"
-                    onchange="validationNotifiedCaptcha()"
-                    class="minimal"
+              <div>
+                <label for="email">Enter your e-mail</label>
+              </div>
+              <div>
+                <input
+                  id="email"
+                  onchange="validationNotifiedCaptcha()"
+                  type="email"
+                  name="email"
+                  placeholder="johndoe@email.com"
+                />
+              </div>
+              <div id="notice"></div>
+              <div><label for="countries">Select your country</label></div>
+              <div class="select">
+                <select
+                  name="countries"
+                  id="countries"
+                  onchange="validationNotifiedCaptcha()"
+                  class="minimal"
+                >
+                  <option value="denmark" class="denmark" selected
+                    >Denmark</option
                   >
-                    <option value="denmark" class="denmark" selected
-                      >Denmark</option
-                    >
-                    <option value="finland" class="finland">Finland</option>
-                    <option value="norway" class="norway">Norway</option>
-                    <option value="spain" class="spain">Spain</option>
-                    <option value="sweden" class="sweden">Sweden</option>
-                    <option value="portugal" class="portugal">Portugal</option>
-                    <option value="poland" class="poland">Poland</option>
-                    <option value="czech" class="czech">Czech Republic</option>
-                    <option value="romania" class="romania">Romania</option>
-                    <option value="hungary" class="hungary">Hungary</option>
-                    <option
-                      value="bosnia_Herzegovina"
-                      class="bosnia_Herzegovina"
-                      >Bosnia & Herzegovina</option
-                    >
-                  </select>
-                </div>
-                <div><label for="languages">Select language</label></div>
-                <div class="select">
-                  <select
-                    name="languages"
-                    id="lang"
-                    onchange="validationNotifiedCaptcha()"
+                  <option value="finland" class="finland">Finland</option>
+                  <option value="norway" class="norway">Norway</option>
+                  <option value="spain" class="spain">Spain</option>
+                  <option value="sweden" class="sweden">Sweden</option>
+                  <option value="portugal" class="portugal">Portugal</option>
+                  <option value="poland" class="poland">Poland</option>
+                  <option value="czech" class="czech">Czech Republic</option>
+                  <option value="romania" class="romania">Romania</option>
+                  <option value="hungary" class="hungary">Hungary</option>
+                  <option value="bosnia_Herzegovina" class="bosnia_Herzegovina"
+                    >Bosnia & Herzegovina</option
                   >
-                    <option value="denmark" class="denmark" selected>
-                      Danish</option
-                    >
-                    <option value="finland" class="finland"> Finnish</option>
-                    <option value="norway" class="norway"> Norwegian</option>
-                    <option value="spain" class="spain"> Spanish </option>
-                    <option value="sweden" class="sweden"> Swedish</option>
-                    <option value="portugal" class="portugal">
-                      Portuguese</option
-                    >
-                    <option value="poland" class="poland"> Polish</option>
-                    <option value="czech" class="czech"> Czech </option>
-                    <option value="romania" class="romania"> Romanian</option>
-                    <option value="hungary" class="hungary"> Hungarian</option>
-                    <option value="serbian" class="bosnia_Herzegovina">
-                      Serbian
-                    </option>
-                    <option value="croatian" class="bosnia_Herzegovina">
-                      Croatian</option
-                    >
-                  </select>
-                </div>
+                </select>
+              </div>
+              <div><label for="languages">Select language</label></div>
+              <div class="select">
+                <select
+                  name="languages"
+                  id="lang"
+                  onchange="validationNotifiedCaptcha()"
+                >
+                  <option value="denmark" class="denmark" selected>
+                    Danish</option
+                  >
+                  <option value="finland" class="finland"> Finnish</option>
+                  <option value="norway" class="norway"> Norwegian</option>
+                  <option value="spain" class="spain"> Spanish </option>
+                  <option value="sweden" class="sweden"> Swedish</option>
+                  <option value="portugal" class="portugal"> Portuguese</option>
+                  <option value="poland" class="poland"> Polish</option>
+                  <option value="czech" class="czech"> Czech </option>
+                  <option value="romania" class="romania"> Romanian</option>
+                  <option value="hungary" class="hungary"> Hungarian</option>
+                  <option value="serbian" class="bosnia_Herzegovina">
+                    Serbian
+                  </option>
+                  <option value="croatian" class="bosnia_Herzegovina">
+                    Croatian</option
+                  >
+                </select>
+              </div>
 
-                <div id="termsAndConditions" class="center">
-                  <input
-                    onchange="validationNotifiedCaptcha()"
-                    class="styled-checkbox"
-                    id="styled-checkbox-1"
-                    type="checkbox"
-                    name="TermConditions"
-                  />
-                  <label for="styled-checkbox-1"
-                    >I agree with the
-                    <a
-                      href="https://en.hbonordic.com/terms-and-conditions"
-                      target="_blank"
-                      class="terms"
-                      >Term & Conditions</a
-                    ></label
-                  >
-                </div>
+              <div id="termsAndConditions" class="center">
+                <input
+                  onchange="validationNotifiedCaptcha()"
+                  class="styled-checkbox"
+                  id="styled-checkbox-1"
+                  type="checkbox"
+                  name="TermConditions"
+                />
+                <label for="styled-checkbox-1"
+                  >I agree with the
+                  <a
+                    href="https://en.hbonordic.com/terms-and-conditions"
+                    target="_blank"
+                    class="terms"
+                    >Term & Conditions</a
+                  ></label
+                >
+              </div>
 
-                <div class="center">
-                  <p
-                    class="g-recaptcha"
-                    data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"
-                    data-callback="validationNotifiedCaptcha"
-                  ></p>
-                </div>
+              <div class="center">
+                <p
+                  class="g-recaptcha"
+                  data-sitekey="6LdLCvAUAAAAANZchTlbjzwRKm6O0h3TFXiYfjD7"
+                  data-callback="validationNotifiedCaptcha"
+                ></p>
+              </div>
 
-                <div>
-                  <button
-                    id="formButton"
-                    class="button-blue-anim"
-                    disabled
-                    onclick="sendInfo('notified')"
-                    >Be notified</button
-                  >
-                </div>
-              </form>
+              <div>
+                <button
+                  id="formButton"
+                  class="button-blue-anim"
+                  disabled
+                  onclick="sendInfo('notified')"
+                  >Be notified</button
+                >
+              </div>
             </div>
           </div>
         </section>

@@ -28,60 +28,58 @@
               >
             </div>
             <div id="info" class="divVoucher">
-              <form>
-                <div>
-                  <label for="email">Enter your e-mail</label>
-                </div>
-                <div>
-                  <input
-                    onchange="validationVoucher()"
-                    type="email"
-                    name="email"
-                    id="email"
-                    placeholder="johndoe@email.com"
-                  />
-                </div>
-                <div id="notice"></div>
-                <div>
-                  <label for="campaign">Campaign code</label>
-                </div>
-                <div>
-                  <input
-                    onchange="validationVoucher()"
-                    type="text"
-                    name="campaign"
-                    id="campaign"
-                    placeholder="XX-XX-XX-XX"
-                  />
-                </div>
-                <div id="termsAndConditions">
-                  <input
-                    onchange="validationVoucher()"
-                    class="styled-checkbox"
-                    id="styled-checkbox-1"
-                    type="checkbox"
-                    name="TermConditions"
-                  />
-                  <label for="styled-checkbox-1"
-                    >I agree with the
-                    <a
-                      href="https://en.hbonordic.com/terms-and-conditions"
-                      target="_blank"
-                      class="terms"
-                      >Term & Conditions</a
-                    ></label
-                  >
-                </div>
-                <div>
-                  <button
-                    id="formButton"
-                    class="button-blue-anim"
-                    disabled
-                    onclick="sendInfo()"
-                    >Get started</button
-                  >
-                </div>
-              </form>
+              <div>
+                <label for="email">Enter your e-mail</label>
+              </div>
+              <div>
+                <input
+                  onchange="validationVoucher()"
+                  type="email"
+                  name="email"
+                  id="email"
+                  placeholder="johndoe@email.com"
+                />
+              </div>
+              <div id="notice"></div>
+              <div>
+                <label for="campaign">Campaign code</label>
+              </div>
+              <div>
+                <input
+                  onchange="validationVoucher()"
+                  type="text"
+                  name="campaign"
+                  id="campaign"
+                  placeholder="XX-XX-XX-XX"
+                />
+              </div>
+              <div id="termsAndConditions">
+                <input
+                  onchange="validationVoucher()"
+                  class="styled-checkbox"
+                  id="styled-checkbox-1"
+                  type="checkbox"
+                  name="TermConditions"
+                />
+                <label for="styled-checkbox-1"
+                  >I agree with the
+                  <a
+                    href="https://en.hbonordic.com/terms-and-conditions"
+                    target="_blank"
+                    class="terms"
+                    >Term & Conditions</a
+                  ></label
+                >
+              </div>
+              <div>
+                <button
+                  id="formButton"
+                  class="button-blue-anim"
+                  disabled
+                  onclick="sendInfo()"
+                  >Get started</button
+                >
+              </div>
             </div>
           </div>
         </section>
