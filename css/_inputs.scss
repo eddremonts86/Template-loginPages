@@ -96,8 +96,7 @@
         }
         &:disabled {
           transition: 1s;
-          background: $black;
-          border: 1px solid #101010;
+          background: $ButtonBase;
           color: #323232;
           cursor: not-allowed;
         }
