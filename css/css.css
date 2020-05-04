@@ -304,6 +304,15 @@ footer {
   transition: 0.2s;
 }
 
+.web_form div button.button-blue-anim:disabled {
+  cursor: not-allowed;
+}
+
+.web_form div button.button-blue-anim:enabled {
+  -webkit-transition: 1s;
+  transition: 1s;
+}
+
 .web_form div .terms {
   font-size: 13px;
   text-transform: uppercase;

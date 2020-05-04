@@ -94,6 +94,12 @@
           background: $ButtonHover;
           transition: 0.2s;
         }
+        &:disabled {
+          cursor: not-allowed;
+        }
+        &:enabled {
+          transition: 1s;
+        }
       }
     }
     .terms {
